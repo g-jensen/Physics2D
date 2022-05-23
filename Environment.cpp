@@ -12,3 +12,23 @@ sf::RectangleShape Environment::base(sf::RenderWindow& window)
 	return floor;
 }
 
+void Environment::setGravity(float newG)
+{
+	gravity = newG;
+}
+
+float Environment::getGravity()
+{
+	return gravity;
+}
+
+void Environment::setfrictionState(bool state)
+{
+	frictionState = state;
+}
+
+bool Environment::getfrictionState()
+{
+	return frictionState;
+}
+
