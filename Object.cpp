@@ -25,6 +25,7 @@ void Object::update()
 {
 	velocity += acceleration;
 	position += velocity;
+	shape.setPosition(position);
 }
 
 sf::CircleShape Object::getShape()
@@ -61,6 +62,7 @@ void Object::setShape(sf::CircleShape newshape)
 void Object::setPosition(sf::Vector2f position)
 {
 	this->position = position;
+	this->shape.setPosition(position);
 }
 
 void Object::setVelocity(sf::Vector2f velocity)
