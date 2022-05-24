@@ -2,6 +2,7 @@
 #include <iostream>
 #include "Object.h"
 #include "Environment.h"
+#define _USE_MATH_DEFINES
 #include <cmath>
 #include <SFML/Graphics.hpp>
 class Kinematics
