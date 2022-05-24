@@ -2,7 +2,7 @@
 
 void Kinematics::forcesActive(Object& obj1, Environment env)
 {
-	float angularDirection = atan(obj1.getVelocity().y / obj1.getVelocity().x) * (180/3.14);
+	float angularDirection = atan(obj1.getVelocity().y / obj1.getVelocity().x) * (180/M_PI);
 	std::cout << angularDirection << std::endl;
 
 	//gravity
